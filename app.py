@@ -1,13 +1,6 @@
-from flask import Flask
-import os
+__author__ = 'k0emt'
 
-app = Flask(__name__)
-
-@app.route("/")
-def hello():
-    return "Python Application Developed by Vamshi"
-
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True,host='0.0.0.0',port=port)
+class Greeter:
+    def __init__(self):
+        self.message = 'Hello world'
+        # print self.message
